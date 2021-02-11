@@ -24,35 +24,29 @@
 	
 	
 	
-	<body>
+	<!-- The body block -->
+	<body class="theme--bgcolor1">
 	
-		<!-- The body block -->
-		<div class="whole__page bloc--bgcolor1">
+		<!-- The whole page maxed-width to 1024px -->
+		<div class="whole__page theme--bgcolor2">
 		
-			<!-- inside container to apply left and right margin -->
-			<div class="body__container bloc--bgcolor2">
-				
-				
 				<!-- ********************************************************
 											HEADER
 				********************************************************* -->
 					
-					<header>
+					<header class="container fbx fbx--nowrap fbx--center fbx--row">
 						
-						<!-- logo -->
-						<div class="header__logo">
-							<img src="./media/logo_simplified.png" alt="Logo" class="header__image"/>
-						</div>
+						<!-- Logo Insert -->
+						<img src="./media/logo_simplified.png" alt="Logo" class="header__image"/>
 						
-						<!-- Insertion du logo -->
-						<nav class="header__menu">
+						<!-- top-right Menu -->
+						<nav class="fbx fbx--nowrap fbx--column fbx--center header--nav">
 							
-							<!-- Menus -->
-							<a href="#anchor_s1" class="header__menuItem bloc--bgcolor2">Bienvenue</a>
-							<a href="#anchor_s2" class="header__menuItem bloc--bgcolor2">Projets</a>
-							<a href="#anchor_s3" class="header__menuItem bloc--bgcolor2">Nouvelles</a>
-							<a href="#anchor_s4" class="header__menuItem bloc--bgcolor2">Témoignages</a>
-							<a href="#anchor_s5" class="header__menuItem bloc--bgcolor2">Contact</a>
+							<a href="#anchor_s1" class="nav--item">Bienvenue</a>
+							<a href="#anchor_s2" class="nav--item">Projets</a>
+							<a href="#anchor_s3" class="nav--item">Nouvelles</a>
+							<a href="#anchor_s4" class="nav--item">Témoignages</a>
+							<a href="#anchor_s5" class="nav--item">Contact</a>
 							
 						</nav>
 						
@@ -66,43 +60,47 @@
 					<main>
 						
 							<!-- Section "S1" - SITE WELCOME -->
-							<section id="anchor_s1" class="section--bloc bloc--lighter">
+							<section id="anchor_s1" class="theme--lighter">
 								
 								<!-- Site Name -->
-								<h1 class="section--title">Bienvenue</h1>
+								<h1 class="container title">Bienvenue</h1>
 								
-								<div class="section--content s1--content">
+								<div class="container">
+									
 									<!-- Welcome Message -->
 									<p class="section--article">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Sed non risus. Suspendisse lectus tortor,
-									dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-									Cras elementum ultrices diam. Maecenas ligula massa,
-									varius a, semper congue, euismod non, mi. Proin porttitor,
-									orci nec nonummy molestie, enim est eleifend mi,
-									non fermentum diam nisl sit amet erat. Duis semper.
-									Duis arcu massa, scelerisque vitae, consequat in,
-									pretium a, enim. Pellentesque congue.
-									Ut in risus volutpat libero pharetra tempor.</p>
+										Sed non risus. Suspendisse lectus tortor,
+										dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+										Cras elementum ultrices diam. Maecenas ligula massa,
+										varius a, semper congue, euismod non, mi. Proin porttitor,
+										orci nec nonummy molestie, enim est eleifend mi,
+										non fermentum diam nisl sit amet erat. Duis semper.
+										Duis arcu massa, scelerisque vitae, consequat in,
+										pretium a, enim. Pellentesque congue.
+										Ut in risus volutpat libero pharetra tempor.
+									</p>
+									
 									<!-- Welcome Photos -->
-									<div class="s1_photo">
+									<div class="fbx fbx--wrap fbx--start fbx--row content">
 								    	<a href="./media/pres_1_wide.jpg" class="s1_photo_fade"><img src="./media/pres_1.jpg"  alt="Presensation image" class="s1_photo-item"/></a>
 								    	<a href="./media/pres_2_wide.jpg" class="s1_photo_fade"><img src="./media/pres_2.jpg"  alt="Presensation image" class="s1_photo-item"/></a>
 									</div>
+									
 								</div>
 								
 							</section>
 							
 							
 							<!-- Section "S2" - PROJECTS -->
-							<section id="anchor_s2" class="section--bloc bloc--light">
+							<section id="anchor_s2" class="theme--light">
 								
 								<!-- Projects -->
-								<h1 class="section--title">Projets</h1>
+								<h1 class="container title">Projets</h1>
 								
-								<div class="section--content bloc--darker">
+								<div class="fbx fbx--wrap fbx--start fbx--row content theme--darker">
 									
 									<!-- image - title - desc -->
-									<div class="s2--item border--dark">
+									<div class="s2--item theme__border--dark">
 										<img src="./media/castle-park-st-andrew.jpg" alt="Gallerie - Castle Park" class="s2--image overscalable"/>
 										<h3 class="s2__item--title">Title 1</h3>
 										<p class="section--text">
@@ -114,7 +112,7 @@
 								    	</p>
 								    </div>
 								    
-									<div class="s2--item border--dark">
+									<div class="s2--item theme__border--dark">
 										<img src="./media/castle-garden-park-725x544.jpg" alt="Gallerie - Garden Park" class="s2--image overscalable"/>
 										<h3 class="s2__item--title">Title 2</h3>
 										<p class="section--text">
@@ -129,7 +127,7 @@
 										</p>
 									</div>
 									
-									<div class="s2--item border--dark">
+									<div class="s2--item theme__border--dark">
 										<img src="./media/england-72257_1280.jpg" alt="Gallerie - England" class="s2--image overscalable"/>
 										<h3 class="s2__item--title">Title 3</h3>
 										<p class="section--text">
@@ -151,60 +149,58 @@
 							
 							
 							<!-- section "S3" - NEWS -->
-							<section id="anchor_s3" class="section--bloc bloc--lighter">
+							<section id="anchor_s3" class="theme--lighter">
 								
-								<div class="section--title s3__title">
+								<div class="container title s3__title">
 									<h1 class="s3__title--item">News</h1>
 									<p class="s3__title--item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
 									</p>
 								</div>
 								
-								<div class="section--content bloc--light">
+								<div class="fbx fbx--wrap fbx--start fbx--row content theme--light">
 									<p class="section--article">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-									</p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
 								</div>
 								
 							</section>
 							
-							
 							<!-- section "S4" - REVIEWS -->
-							<section id="anchor_s4" class="section--bloc bloc--darker">
+							<section id="anchor_s4" class="theme--darker">
 								
-								<div class="section--title s4__title--box">
+								<div class="container title s4__title--box">
 									<h1>Témoignages</h1>
 									<p class="s4__subtitle">Lorem Ipsum Dolor</p>
 								</div>
 								
 								<!-- images - titles - desc -->
-								<div class="section--content bloc--lighter s4__view">
+								<div class="fbx fbx--wrap fbx--start fbx--row content theme--lighter s4__view">
 									
-									<div class="section--item s4__view--item">
-										<img src="./media/urn-428740_1920.jpg" alt="Chef de Projet - Jardin" class="border--dark s4--image overscalable"/>
+									<div class="s4__view--item">
+										<img src="./media/urn-428740_1920.jpg" alt="Chef de Projet - Jardin" class="theme__border--dark s4--image overscalable"/>
 										<h3 class="s4__item--title">Lorem Ipsum</h3>
 										<p class="section--article">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor.</p>
 										<a href="https://www.twitter.com">	<img src="./media/twitter.png"	 alt="icone twitter"	class="s4--icon"/></a>
 										<a href="https://www.facebook.com">	<img src="./media/facebook.png"	 alt="icone facebook"	class="s4--icon"/></a>
 										<a href="https://www.linkedin.com">	<img src="./media/linkedin.png"	 alt="icone linkedin"	class="s4--icon"/></a>
 								    </div>
-								    <div class="section--item s4__view--item">
-										<img src="./media/netherlands-179292_1920.jpg" alt="Chef de Projet - Chemin de jardin" class="border--dark s4--image overscalable"/>
+								    <div class="s4__view--item">
+										<img src="./media/netherlands-179292_1920.jpg" alt="Chef de Projet - Chemin de jardin" class="theme__border--dark s4--image overscalable"/>
 										<h3 class="s4__item--title">Lorem Ipsum</h3>
 										<p class="section--article">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor.</p>
 										<a href="https://www.twitter.com">	<img src="./media/twitter.png"	 alt="icone twitter"	class="s4--icon"/></a>
 										<a href="https://www.facebook.com">	<img src="./media/facebook.png"	 alt="icone facebook"	class="s4--icon"/></a>
 										<a href="https://www.linkedin.com">	<img src="./media/linkedin.png"	 alt="icone linkedin"	class="s4--icon"/></a>
 								    </div>
-								    <div class="section--item s4__view--item">
-										<img src="./media/gazebo-211654_1920.jpg" alt="Chef de Projet - Gazebo" class="border--dark s4--image overscalable"/>
+								    <div class="s4__view--item">
+										<img src="./media/gazebo-211654_1920.jpg" alt="Chef de Projet - Gazebo" class="theme__border--dark s4--image overscalable"/>
 										<h3 class="s4__item--title">Lorem Ipsum</h3>
 										<p class="section--article">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor.</p>
 										<a href="https://www.twitter.com">	<img src="./media/twitter.png"	 alt="icone twitter"	class="s4--icon"/></a>
 										<a href="https://www.facebook.com">	<img src="./media/facebook.png"	 alt="icone facebook"	class="s4--icon"/></a>
 										<a href="https://www.linkedin.com">	<img src="./media/linkedin.png"	 alt="icone linkedin"	class="s4--icon"/></a>
 								    </div>
-								    <div class="section--item s4__view--item">
-										<img src="./media/home-95587_1920.jpg" alt="Chef de Projet - Maison" class="border--dark s4--image overscalable"/>
+								    <div class="s4__view--item">
+										<img src="./media/home-95587_1920.jpg" alt="Chef de Projet - Maison" class="theme__border--dark s4--image overscalable"/>
 										<h3 class="s4__item--title">Lorem Ipsum</h3>
 										<p class="section--article">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor.</p>
 										<a href="https://www.twitter.com">	<img src="./media/twitter.png"	 alt="icone twitter"	class="s4--icon"/></a>
@@ -215,11 +211,11 @@
 								</div>
 								
 								<!-- box review -->
-								<article  class="section--content bloc--lighter">
+								<article  class="fbx fbx--wrap fbx--start fbx--row content theme--lighter">
 									<h2>Avis Client</h2>
 									<div class="s4__client">
-										<img src="./media/ra-nijkerk-102385_1920.jpg" alt="Client - projet ra-nijerk" class="border--dark s4__client--image"/>
-										<div class="s4__client--review border--dark">
+										<img src="./media/ra-nijkerk-102385_1920.jpg" alt="Client - projet ra-nijerk" class="theme__border--dark s4__client--image"/>
+										<div class="s4__client--review theme__border--dark">
 											<p>
 												<br/>
 												Témoignage
@@ -230,13 +226,13 @@
 								</article>
 								
 								<!-- box slideshow -->
-								<div class="section--content bloc--lighter">
+								<div class="fbx fbx--wrap fbx--start fbx--row content theme--lighter">
 									<h2>Galerie Photo</h2>
 									<div class="s4__slideshow">
-										<img src="./media/lawn-65063_1280.jpg" alt="Galerie Lawn" class="border--dark s4__slideshow--item overscalable"/>
-										<img src="./media/lawn-care-643555_1280.jpg" alt="Galerie Lawn Care View 1" class="border--dark s4__slideshow--item overscalable"/>
-										<img src="./media/lawn-care-643557_1280.jpg" alt="Galerie Lawn Care View 2" class="border--dark s4__slideshow--item overscalable"/>
-										<img src="./media/lawn-care-643561_1280.jpg" alt="Galerie Lawn Care View 3" class="border--dark s4__slideshow--item overscalable"/>
+										<img src="./media/lawn-65063_1280.jpg" alt="Galerie Lawn" class="theme__border--dark s4__slideshow--item overscalable"/>
+										<img src="./media/lawn-care-643555_1280.jpg" alt="Galerie Lawn Care View 1" class="theme__border--dark s4__slideshow--item overscalable"/>
+										<img src="./media/lawn-care-643557_1280.jpg" alt="Galerie Lawn Care View 2" class="theme__border--dark s4__slideshow--item overscalable"/>
+										<img src="./media/lawn-care-643561_1280.jpg" alt="Galerie Lawn Care View 3" class="theme__border--dark s4__slideshow--item overscalable"/>
 									</div>
 								</div>
 								
@@ -244,65 +240,64 @@
 							
 							
 							<!-- section "S5" - CONTACT -->
-							<section id="anchor_s5" class="section--bloc bloc--primarycolor">
+							<section id="anchor_s5" class="theme--primarycolor">
 								
-								<div class="section--title s5__title">
-									<h1 class="s5__title--item">Contact</h1>
-									<a href="https://www.facebook.com"	class="s5__title--item"><img src="./media/facebook_w.png" alt="contact facebook" class="s5__title--icon" /></a>
-									<a href="https://www.facebook.com"	class="bloc--primarycolor s5__title--item s5__title__textIcon">/facebook</a>
-									<a href="https://www.twitter.com" 	class="s5__title--item"><img src="./media/twitter_w.png" alt="contact twitter" class="s5__title--icon" /></a>
-									<a href="https://www.twitter.com" 	class="bloc--primarycolor s5__title--item s5__title__textIcon">@twitter</a>
+								<div class="container title fbx fbx--center">
+									<h1 >Contact</h1>
+									<div class="s5__sociallink">
+										<a href="https://www.facebook.com"><img src="./media/facebook_w.png" alt="contact facebook" class="s5__title--icon" /></a>
+										<a href="https://www.facebook.com" class="theme--primarycolor s5__title__textIcon">/facebook</a>
+										<a href="https://www.twitter.com" ><img src="./media/twitter_w.png" alt="contact twitter" class="s5__title--icon" /></a>
+										<a href="https://www.twitter.com" class="theme--primarycolor s5__title__textIcon">@twitter</a>
+									</div>
 								</div>
 								
-								<div class="section--content bloc--lighter">
+								<div class="fbx fbx--wrap fbx--start fbx--row content theme--lighter">
 									<div class="s5__subtitle">
 										<h2>Contact</h2>
 										<h3>Lorem Ipsum Dolor Lorem Ipsum Dolor</h3>
 									</div>
 								</div>
 								
-								<div class="section--content bloc--lighter s5__box">
+								<div class="s5__bloc fbx fbx--wrap fbx--center fbx--column theme--lighter">
 									
-									<div class="section--item s5__adress">
-										<p class="section--article">
-											Les jardins de Thorim<br/>
-											Société de jardinage<br/>
-											120 Océan Atlantique<br/>
-											Pays du Monde<br/>
-											01.02.03.04.05<br/>
-											09.08.07.06.05<br/>
-										</p>
-									</div>
+									<p class="s5__adress">
+										Les jardins de Thorim<br/>
+										Société de jardinage<br/>
+										120 Océan Atlantique<br/>
+										Pays du Monde<br/>
+										01.02.03.04.05<br/>
+										09.08.07.06.05<br/>
+									</p>
 									
-									<form class="section--item s5__form">
+									<form class="s5__form fullwidth fbx fbx--wrap fbx--center fbx--column">
+										
 						    			<h2 class="s5__form--title">Laissez nous votre message</h2>
-						    			<br/>
 						    			
-						    			<div class="s5__user">
-						    				<div class="s5__user--item">
+						    			<div class="s5__box--inputs fullwidth fbx fbx--wrap fbx--column">
+						    				<div class="s5__box--input fullwidth fbx fbx--nowrap fbx--column fbx--start">
 						    					<label for="name">Nom</label>
-												<input class="bloc--dark s5__user--input" type="text" id="name" placeholder="Entrer votre nom"/>
+												<input class="s5--input theme--dark box--border fullwidth" type="text" id="name" placeholder="Entrer votre nom"/>
 						    				</div>
 						    				
-						    				<div class="s5__user--item">
+						    				<div class="s5__box--input fullwidth fbx fbx--nowrap fbx--column fbx--start">
 						    					<label for="email">Email</label>
-												<input class="bloc--dark s5__user--input" type="text" id="email" placeholder="you@domaim.ext"/>
+												<input class="s5--input theme--dark box--border fullwidth" type="text" id="email" placeholder="you@domaim.ext"/>
 						    				</div>
 						    				
-						    				<div class="s5__user--item">
+						    				<div class="s5__box--input fullwidth fbx fbx--nowrap fbx--column fbx--start">
 						    					<label for="subject">Sujet du message</label>
-												<input class="bloc--dark s5__user--input" type="text" id="subject" placeholder="Titre ..."/>
+												<input class="s5--input theme--dark box--border fullwidth" type="text" id="subject" placeholder="Titre ..."/>
 						    				</div>
 						    			</div>
 						    			
-					    				<div class="s5__user--item">
+					    				<div class="s5__box--textarea fullwidth fbx fbx--nowrap fbx--column fbx--start">
 											<label for="message">Message</label>
-											<textarea class="bloc--dark s5__textarea" rows="6" id="message" placeholder="Votre message ..."></textarea>
+											<textarea class="s5--textarea theme--dark box--border fullwidth" rows="6" id="message" placeholder="Votre message ..."></textarea>
 										</div>
 										
-										<div class="s5__user--item s5__validate">
-											<input class="s5__user--button" type="submit" value="Envoyer" />
-										</div>
+										<input class="s5--validate fullwidth" type="submit" value="Envoyer" />
+										
 					    			</form>
 					    			
 								</div>
@@ -316,11 +311,11 @@
 											FOOTER
 				********************************************************* -->
 					
-					<footer class="section--bloc bloc--darker">
-						<div class="footer_bloc">
+					<footer class="theme--darker">
+						<div class="footer__bloc fbx fbx--column fbx--center">
 							
 							<!-- ... -->
-							<div class="footer_bloc-row">
+							<div>
 								<h2 class="footer--title">Titre</h2>
 								<ul class="footer--list">
 									<li>Item One</li>
@@ -331,7 +326,7 @@
 							</div>
 							
 							<!-- ... -->
-							<div class="footer_bloc-row">
+							<div>
 								<h2 class="footer--title">Titre</h2>
 								<ul class="footer--list">
 									<li>Item One</li>
@@ -342,7 +337,7 @@
 							</div>
 							
 							<!-- ... -->
-							<div class="footer_bloc-row">
+							<div>
 								<h2 class="footer--title">Titre</h2>
 								<ul class="footer--list">
 									<li>Item One</li>
@@ -353,7 +348,7 @@
 							</div>
 							
 							<!-- ... -->
-							<div class="footer_bloc-row">
+							<div>
 								<h2 class="footer--title">Titre</h2>
 								<ul class="footer--list">
 									<li>Item One</li>
@@ -367,13 +362,9 @@
 						
 					</footer>
 					
-					
-			<!-- end of body__container -->
-			</div>
-			
 			
 			<!-- Copyright -->
-				<p class="copyright">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+				<p class="copyright theme--bgcolor1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
 				Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
 				
 				
