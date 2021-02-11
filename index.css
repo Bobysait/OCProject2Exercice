@@ -199,6 +199,9 @@
 				text-align			: left;
 			}
 			
+		.section--text{
+				font-size			: 0.95em;
+		}
 	
 	/* some usefull shortcut(s) for stuff... */
 		
@@ -311,7 +314,7 @@
 				padding				: 2% 2% 2% 2%;
 				max-width			: 400px;
 				min-width			: 175px;
-				height				: 550px;
+				height				: 580px;
 				flex				: 1;
 				overflow			: auto;
 			}
